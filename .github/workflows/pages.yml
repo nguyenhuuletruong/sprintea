@@ -18,7 +18,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
 
       - run: npm ci
       - run: npx quartz build
@@ -34,6 +34,4 @@ jobs:
       name: github-pages
     steps:
       - uses: actions/deploy-pages@v4
-        with:
-          node-version: 22
 
