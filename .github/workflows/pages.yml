@@ -1,3 +1,4 @@
+
 name: Deploy Quartz to GitHub Pages
 
 on:
@@ -33,4 +34,6 @@ jobs:
       name: github-pages
     steps:
       - uses: actions/deploy-pages@v4
+        with:
+          node-version: 22
 
